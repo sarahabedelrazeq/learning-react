@@ -62,6 +62,20 @@ function App() {
           </div>
         </nav>
       </header>
+
+      <div className="imgcontainer">
+        <img src="avatar.png" alt="img" className="avatar"></img>
+      </div> 
+      
+      <div className="text">
+        <h1> mohammad alzghoul</h1>
+        <p>
+          I am a front-end developer and UI designer. In my free time, I enjoy
+          chasing my dog all over the house and collecting dust from my window
+          sill.  
+        </p>
+        <button className="visit-btn">visit profile</button>
+      </div>
     </div>
   );
 }

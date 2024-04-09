@@ -4,5 +4,43 @@
   display: block;
 }
 .search-button svg {
-  display: block;
+  display: block; 
+} 
+.img{
+  
+  height: 50%; 
+  margin: auto;  
+  text-align: center;
+  border-radius: 100%;  
+  
+  border: 2px; 
+   
+}
+
+.avatar{
+  height: 100px;
+  width: 100px;
+  background-color: #d3dbde;
+  border-radius: 50%;
+}
+.imgcontainer,.text{
+  text-align: center;
+}
+
+.text h1{
+  text-transform: capitalize;
+}
+.text p{
+  width: 46%;
+  margin: auto;
+}
+.visit-btn{
+  text-transform: capitalize;
+  border-radius: 20px;
+  background-color: #d3dbde;
+  color: black;
+  padding: 6px 25px;
+  margin-top: 20px;
+  opacity: 75%;
+  border: 0;
 }
