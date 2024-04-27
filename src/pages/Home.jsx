@@ -1,8 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
+
+const posts = [
+  {
+    title: "post 1",
+    image: "https://dummyimage.com/250/f00/000000",
+  },
+  {
+    title: "post 2",
+    image: "https://dummyimage.com/250/ffffff/000000",
+  },
+  {
+    title: "post 4",
+    image: "https://dummyimage.com/250/0f0/000000",
+  },
+  {
+    title: "post 6",
+    image: "https://dummyimage.com/250/ffffff/000000",
+  },
+  {
+    title: "post 8",
+    image: "https://dummyimage.com/250/ffffff/000000",
+  },
+  {
+    title: "post 10",
+    image: "https://dummyimage.com/250/ffffff/000000",
+  },
+];
 
 function Home() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div id="home-page">
+      {/* {posts.map((item, index) => (
+        <div>
+          <p>{item.title}</p>
+          <img src={item.image} />
+        </div>
+      ))} */}
+
       <header>
         <nav>
           <div
@@ -57,11 +92,13 @@ function Home() {
               </div>
             </div>
             <div>
-              <button>Menu</button>
+              <button onClick={() => setIsOpen(true)}>Menu</button>
             </div>
           </div>
         </nav>
       </header>
+
+      {isOpen && <div className="app-menu"></div>}
 
       <div className="imgcontainer">
         <img src="./avatar.png" alt="img" className="avatar"></img>
